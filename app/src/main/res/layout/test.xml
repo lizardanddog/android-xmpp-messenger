@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.example.chatapp2.views.chatBar
+        android:id="@+id/chatBar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+ />
+
+    <com.example.chatapp2.views.CustomEditText
+        android:id="@+id/customEditText4"
+        android:layout_width="295dp"
+        android:layout_height="66dp"
+        android:text="com.example.chatapp2.views.CustomEditText"
+    />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+         >
+
+            <com.example.chatapp2.views.chatBox
+                android:id="@+id/chatBox4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+/>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.example.chatapp2.views.messagesenderButton
+        android:id="@+id/messagesenderButton2"
+        android:layout_width="350dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+/>
+
+
+
+</RelativeLayout>

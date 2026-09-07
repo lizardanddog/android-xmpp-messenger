@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatBoxActivity">
+
+
+    <com.example.chatapp2.fragments.views.AutoFitTextureView
+        android:id="@+id/autoFitTextureView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+
+    <com.example.chatapp2.fragments.views.cameraButton
+        android:id="@+id/cameraButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.example.chatapp2.views.chatBox
+        android:id="@+id/chatBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationZ="-10dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.example.chatapp2.views.CustomEditText
+        android:id="@+id/customEditText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/roundededitext"
+        android:drawablePadding="5dp"
+        android:hint="Message"
+        android:inputType="textMultiLine|textCapSentences"
+        android:lines="5"
+        android:minLines="1"
+        android:translationZ="6dp"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.example.chatapp2.views.messagesenderButton
+        android:id="@+id/messagesenderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:translationZ="6dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/customEditText2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+    <com.example.chatapp2.views.chatBar
+        android:id="@+id/chatBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.example.chatapp2.views.otherFeaturesView
+        android:id="@+id/otherFeaturesView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationZ="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.example.chatapp2.fragments.views.flipView
+        android:id="@+id/flipView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.example.chatapp2.fragments.views.flashview
+        android:id="@+id/flashview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:translationZ="10dp"
+      />
+
+    <com.example.chatapp2.views.videoDisplayer
+        android:id="@+id/videoDisplayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <com.example.chatapp2.views.imageDisplayer
+        android:id="@+id/imageDisplayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="76dp"
+        android:text="Switch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
